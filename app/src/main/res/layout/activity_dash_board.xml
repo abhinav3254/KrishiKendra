@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashBoardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/cartoonlandscape"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:layout_margin="20dp"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:text="30 pts"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:background="@drawable/rectangle"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_stars_24"
+                    android:drawablePadding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:text="Good Morning,"
+                    android:textColor="#548CFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bima Algifari"
+                    android:textColor="#548CFF"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:text="Home"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/sky_blue"
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:text="Shop"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/sky_blue"
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:text="Statics"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/sky_blue"
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:text="Settings"
+                            android:textAllCaps="false"
+                            android:backgroundTint="@color/sky_blue"
+                            />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle"
+                android:hint="Looking for something...."
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="20dp"
+                android:textColorHint="@color/light_grey"
+                android:elevation="3dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Search"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                app:cornerRadius="100dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textAllCaps="false"
+                android:backgroundTint="#FF1700"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="My Progress"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="40"
+                        android:gravity="center"
+                        android:fontFamily="@font/ubuntu_medium"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="60"
+                        android:gravity="center"
+                        android:text="SEE ALL"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark_green"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/cartoonlandscape"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:text="Agriculture Land"
+                            android:textColor="@color/sky_blue"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:layout_margin="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:text="2 of 6 Chapters"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="100"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6 task"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/ic_baseline_attach_file_24"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+2 comments"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/ic_baseline_comment_24"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="My Task"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="40"
+                        android:gravity="center"
+                        android:fontFamily="@font/ubuntu_medium"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="60"
+                        android:gravity="center"
+                        android:text="SEE ALL"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark_green"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/cartoonlandscape">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="100"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6 task"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/ic_baseline_attach_file_24"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+2 comments"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/ic_baseline_comment_24"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Popular courses"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="40"
+                        android:gravity="center"
+                        android:fontFamily="@font/ubuntu_medium"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="60"
+                        android:gravity="center"
+                        android:text="SEE ALL"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark_green"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/cartoonlandscape">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="100"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6 task"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/ic_baseline_attach_file_24"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+2 comments"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/ic_baseline_comment_24"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

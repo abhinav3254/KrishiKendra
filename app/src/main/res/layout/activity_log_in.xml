@@ -56,13 +56,61 @@
             android:layout_margin="10dp"
             />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="100"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/captchaShow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="123456"
+                android:layout_weight="20"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+
+            <ImageView
+                android:id="@+id/refreshButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_refresh_24"
+                android:layout_weight="80"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="captcha here"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle"
+            android:padding="15dp"
+            android:textColorHint="@color/light_grey"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:elevation="10dp"
+            />
+
+
+
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/logInButton"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:text="Log In"
             android:textAllCaps="false"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="100dp"
             />
         <TextView
             android:id="@+id/newUser"
@@ -74,6 +122,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             />
+
+
 
     </LinearLayout>
 

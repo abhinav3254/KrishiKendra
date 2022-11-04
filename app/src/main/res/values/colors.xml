@@ -10,4 +10,9 @@
 
     <color name="light_grey">#B2B2B2</color>
 
+    <color name="green_neon">#9CFF2E</color>
+    <color name="dark_green">#379237</color>
+
+    <color name="sky_blue">#2192FF</color>
+
 </resources>

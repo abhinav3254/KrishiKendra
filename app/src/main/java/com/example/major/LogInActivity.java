@@ -11,6 +11,7 @@ import com.example.major.databinding.ActivityLogInBinding;
 public class LogInActivity extends AppCompatActivity {
 
     ActivityLogInBinding logInBinding;
+    String captchaValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +29,35 @@ public class LogInActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(LogInActivity.this,SignUpActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        captcha();
+
+        logInBinding.refreshButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                captcha();
+            }
+        });
+
+        logInBinding.logInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogInActivity.this,DashBoardActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
 
+    }
+
+    public void captcha() {
+        int max = 3999;
+        int min = 99;
+
+        int captchaAnswer = (int) (Math.random()*(max-min+1)+min);
+
+        logInBinding.captchaShow.setText(""+captchaAnswer);
     }
 }
