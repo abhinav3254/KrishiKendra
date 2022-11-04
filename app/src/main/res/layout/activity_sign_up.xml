@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Name"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:padding="15dp"
+                android:textColorHint="@color/light_grey"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:elevation="10dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="krishi@email.com"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:padding="15dp"
+                android:textColorHint="@color/light_grey"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:elevation="10dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="phone"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:padding="15dp"
+                android:textColorHint="@color/light_grey"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:elevation="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="password"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:elevation="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="confirm password"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:elevation="10dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to Log In"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
